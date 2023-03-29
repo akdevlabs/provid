@@ -1,0 +1,323 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+body{
+    min-height: 150vh;
+    width:100%;
+    background-image:url(blurry.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+
+#logoName{
+    margin-left: -140px;
+    margin-top: 110px;
+    color: #fff;
+    font-size: 25px;
+}
+#loginbtn{
+    display: none;
+}
+
+@media(max-width:500px){
+    .header{
+        background-position: center;
+    }
+    .text-box h1{
+        font-size: 20px;
+    }
+    .searchBar{
+        display: block;
+    }
+    input::placeholder {
+        color: transparent;
+    }
+    .searchBarinput{
+        width: 80%;
+        height:80%;
+        
+    }
+    #logoName{
+        margin-left: -290px;
+        margin-top: 110px;
+    }
+    .nav-links ul li::after{
+        background:#08D8DA;
+    }
+    .nav-links ul li a{
+        font-size: 20px;
+        color: #5601c5;
+        text-shadow: none;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links ul li::after{
+        background:#FE509A;  
+    }
+    .nav-links{
+        position: absolute;
+        background:#08D8DA;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 20px;
+    }
+    .loginBtn{
+        margin-left: 0px;
+    }
+    #loginbtn{
+        display: block;
+        font-size: 20px;
+        color: #5601c5;
+    }
+    .hero-btn{
+        display: block;
+        width: 30%;
+        height: 20%;
+        left: 70%;
+        right: 30%;
+    }
+    .sloganHeader{
+        font-size: 20px;
+        left: 50%;
+    }
+
+}
+/*-----------------------------Form----------------------------------------------*/
+.form{
+    width: 40%;
+    display: flex;
+    flex-direction:column;
+    background-color: #FE509A;
+    align-items: center;
+    text-align: center;
+    justify-content:space-between ;
+    padding: 30px 30px;
+    margin: auto auto;
+    color: #fff;
+    
+}
+.form input{
+    display: flex;
+    flex-direction:column;
+    margin-top: 20px;
+}
+.Providerhead{
+
+    font-weight: 800;
+    font-size: 32px;
+}
+
+
+
+.basicInfo{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    position: relative;  
+}
+.basicInfo input{
+    width: 70%;
+    margin-left: 210px;
+    padding: 10px 10px;
+    
+}
+.basicInfo input{
+    content: "";
+    display: table;
+    clear: both;
+    border-color: #1257ed;
+}
+.basicInfo label{
+   float: left; 
+   position: relative;  
+   padding: -20px;
+}
+.labelclinicName{
+    margin-top: 10px;
+    margin-bottom: -10PX;
+    font-size: 18px;
+    font-weight: 600;
+}
+.labelname{
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.labelemial{
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 600; 
+}
+.labelphone{
+    margin-top: 28px;
+    font-size: 18px;
+    font-weight: 600; 
+}
+
+
+.openHours{
+    margin-bottom: 80px;
+    margin-left: 30px;
+    gap:0px;
+}
+.openHours .DOTW{
+    display: flex;
+    flex-direction:row;
+  
+}
+.openHours  label{
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px ;
+    margin-bottom: 23px;
+    font-size: 15px;
+    font-weight: 600;
+
+    
+}
+.TimeSE{
+    display: flex;
+    flex-direction:row;
+    margin-top: 30px;
+    
+    height: 90px;
+    gap: 40px;
+}
+.TimeSE input{
+    margin-left:150px;
+}
+.TimeSE label{
+    margin-left:-110px;
+    font-size: 20px;
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+.webSite{
+    padding-bottom: 50px;
+}
+.webSite input{
+    width: 70%;
+    margin-left: 210px;
+    padding: 10px 10px;
+}
+.webSite label{
+    float: left; 
+    position: relative;  
+}
+.labelUrl{
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.addFile{
+    font-size: 20px;;
+    margin-top: 50px;
+}
+.addf{
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+.addOn{
+    display: flex;
+    flex-direction: row ;
+    margin-left: -30px;
+    font-size: 20px;
+}
+.selectBase{
+    display: flex;
+    flex-direction:column;
+    margin-left: 0px;
+    
+}
+#chooseIt{
+    width: 50%;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.message label{
+    float: left; 
+    position: relative;  
+}
+.message{
+    margin-top: 30px;
+}
+.labelSubject{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: #08D8DA;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  input[type=submit]:hover {
+    background-color: #5601c5;
+  }
+
+/*-----------------------------Mapas----------------------------------------------*/
+.Proveedoreslookup{
+    width: 1100px;
+    margin: auto auto;
+    margin-bottom: 70px;
+}
+
+.Proveedoresbanner{
+    padding-top:40px ;
+    padding-bottom: 40px;
+    margin-top: 50%;
+    background-color:#128ced;
+    margin-bottom: 0PX;
+    margin: auto auto;
+    width: 1100px;
+    color:#fff;
+    box-shadow: 20px 20px 50px grey;
+}
+.Proveedoresheader{
+    padding-top: 0px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+
+
